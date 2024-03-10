@@ -6,8 +6,8 @@ env:
   synapse_workspace_name:${{secrets.SYNAPSE_WORKSPACE_NAME}}
   client_id:${{secrets.CLIENT_ID}} client_secret:${{secrets.CLIENT_SECRET}}
 jobs:
-  runs-on: ubuntu-latest
-  steps: null
-   - name: Run python script
-     run: python -m pip install requests 
-      python my_python_script.py
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my-step
+        run: echo "Hello World!"
