@@ -1,10 +1,12 @@
 name: Run python script
 on: push
 env: 
-  subscription_id:${{secrets.SUBSCRIPTION_ID}}
-  teanant_id:${{secrets.TENANT_ID}} group_name:${{secrets.RESOURCE_GROUP_NAME}}
-  synapse_workspace_name:${{secrets.SYNAPSE_WORKSPACE_NAME}}
-  client_id:${{secrets.CLIENT_ID}} client_secret:${{secrets.CLIENT_SECRET}}
+  subscription_id: ${{ secrets.SUBSCRIPTION_ID }}
+  teanant_id: ${{ secrets.TENANT_ID }}
+  group_name: ${{ secrets.RESOURCE_GROUP_NAME }}
+  synapse_workspace_name: ${{ secrets.SYNAPSE_WORKSPACE_NAME }}
+  client_id: ${{ secrets.CLIENT_ID }} 
+  client_secret: ${{ secrets.CLIENT_SECRET }}
 jobs:
   my-job:
     runs-on: ubuntu-latest
