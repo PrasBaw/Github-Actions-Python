@@ -12,4 +12,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: my-step
-        run: python my_python_script.py
+        run: |
+         python my_python_script.py
