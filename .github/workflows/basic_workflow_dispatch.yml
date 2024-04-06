@@ -1,0 +1,9 @@
+name: Basic Workflow Dispatch Example
+
+on:
+  workflow_dispatch:
+jobs: 
+  deploy:
+    runs on: ubuntu-latest
+    steps:
+      - run: echo "Basic workflow executed Prashan!"
